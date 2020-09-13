@@ -12,10 +12,18 @@
 <script src="./js/jquery-2.2.4.min.js"></script>
 <script src="./js/jquery.scrollTo.min.js"></script>
 
-<script>
+<!-- <script>
     $(function() {
         $('nav a').click(function(e) {
             $.scrollTo(this.hash || 0, 1500);
+            e.preventDefault();
+        });
+    });
+</script> -->
+<script>
+    $(function() {
+        $('nav a').click(function(e) {
+            $.scrollTo(this.hash || 0,1200);
             e.preventDefault();
         });
     });
