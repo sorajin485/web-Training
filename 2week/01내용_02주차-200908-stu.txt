@@ -1,0 +1,49 @@
+-웹개발실무: (02주차 실습 내용)
+-------------------------------------
+-- fontawesome
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<i class="fa fa-bicycle" aria-hidden="true"></i>
+-------------------------------------
+
+-------------------------------------
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cards Flexbox</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/pr10-01-flex.css">
+</head>
+-------------------------------------
+<!-- pr12-01_OnePageScroll-stu.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pr12-02_OnePageScroll</title>
+<link rel="stylesheet" href="./css/onepagescroll-stu.css">
+</head>
+<body>
+여행을 떠나요
+Europe
+United States
+China
+Japan
+<!--
+여행을 떠나요
+Europe
+United States
+China
+Japan
+-->
+</body>
+</html>
+-------------------------------------
+
+
+-------------------------------------
