@@ -1,0 +1,88 @@
+<!-- ex-float-list-k.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>float</title>
+<link rel="stylesheet" href="./css/common.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+    <style>
+        /*  상단메뉴 */
+        .example-header .inner {
+            max-width: 800px;
+            margin: 40px auto 0 auto;
+            padding: 0 20px;
+        }
+
+
+        .example-header .meta {
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+        }
+
+
+        .example-header .meta li {
+            margin: 0 20px;
+            font-size: 0.823em;
+            /* display: inline; */
+        }
+
+        .example {
+            max-width: 800px;
+            margin: 0 auto 1em auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+
+        }
+        /*  메뉴 끝 */
+        .icon-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 450px;
+        }
+        .icon-list li {
+            clear: left;
+            margin: 1em 0;
+            border-bottom: 1px solid #e5dbff;
+        }
+        .icon-list img {
+            float: left;
+            display: block;
+            margin: 0 10px 10px 0;
+        }
+    </style>
+</head>
+<body id="ch1">
+    <header class="example-header">
+        <ul class="meta">
+            <li class="book">메뉴1</li>
+            <li class="author">메뉴2</li>
+            <li class="chapter">메뉴3</li>
+        </ul>
+        <div class="inner">
+            <h1>A list with floated images</h1>
+        </div>
+    </header>
+    <div class="example">
+        <ul class="icon-list">
+            <li><img src="./img/aba-logo_small.png" alt="A Book Apart Logo"> 
+                <p>이 이미지는 왼쪽으로 플로팅되었으므로 일반적인 흐름에서 벗어나서 가능한 한 상단으로 이동한다.
+                텍스트는 이미지의 오른쪽과 아래쪽을 감싸는 형태로 배치된다.  
+                플로팅된 이미지에 적용된 바깥 마진은 이미지와 텍스트 사이의 공간을 설정한다.
+                </p>
+            </li>
+            <li><img src="./img/aba-logo_small.png" alt="A Book Apart Logo"> 
+                <p>이 이미지는 왼쪽으로 플로팅되었으므로 일반적인 흐름에서 벗어나서 가능한 한 상단으로 이동한다.
+                텍스트는 이미지의 오른쪽과 아래쪽을 감싸는 형태로 배치된다.  
+                플로팅된 이미지에 적용된 바깥 마진은 이미지와 텍스트 사이의 공간을 설정한다.
+                </p>
+            </li>
+        </ul> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Chapter 3: A simple flexbox example</title>
+	<link rel="stylesheet" href="./css/common.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto 1em auto;
+            background-color: #fff;
+            padding: 20px;
+           /* border-radius: 5px;*/
+            display: flex;
+        }
+        .item {
+            margin: 0;
+            padding: 0;
+            flex: auto;
+        }
+        .itemA { border: 3px solid blue; background-color: #ff0000; text-align: center;}
+        .itemB { border: 3px solid blue; background-color: #00ff00; text-align: center;}
+        .itemC { border: 3px solid blue; background-color: #ffff00; text-align: center;}
+    </style>
+</head>
+
+<body>
+    <header class="example-header">
+        <div class="inner">
+            <h1>Flexbox Items(auto)</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="item itemA"><h2>카드 1</h2></div>
+        <div class="item itemB"><h2>카드 2</h2><h4>flex layout</h4></div>
+        <div class="item itemC"><h2>카드 3</h2></div>           
+    </div>
+</body>
+</html>

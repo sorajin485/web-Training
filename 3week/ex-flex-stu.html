@@ -1,0 +1,44 @@
+<!-- ex-flex-stu.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+    * {
+        margin:0;
+        padding:0;
+    }
+    #parent {
+        width:500px;
+        height:300px;
+        border:solid 5px #000000;
+        margin:50px 0 0 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        /* flex-wrap: wrap;  */ 
+        /* justify-content: space-between; */
+    }
+    .item{
+      flex:0 0 150px;
+    }
+
+    #box1, #box2, #box3 {
+        text-align: center;
+    }
+    #box1 {background-color:#ff0000; }
+    #box2 {background-color:#00ff00; }
+    #box3 {background-color:#ffff00; }
+</style>
+</head>
+<body>
+  <div id="parent">
+    <div id="box1" class="item">A</div>
+    <div id="box2" class="item">B
+           <br>flex
+    </div>
+    <div id="box3" class="item">C</div>
+    
+  </div>
+</body>
+</html>
