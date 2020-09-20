@@ -16,8 +16,8 @@
     <ul>
       <li><a href="#">처음으로</a></li>
       <li><a href="#">코딩이란</a></li>
-      <li><a href="#">왜 코딩 교육인가</a></li>
-      <li><a href="#">교육 프로그램</a></li>
+      <li><a href="#why">왜 코딩 교육인가</a></li>
+      <li><a href="#edu">교육 프로그램</a></li>
     </ul>
     <a href="#" id="trigger">MENU</a>
   </nav>   
@@ -41,7 +41,7 @@
   <section>  
     <div class="wrapper">
       <header class="section-title">
-        <h3>왜 코딩 교육인가</h3>
+        <h3 id="why">왜 코딩 교육인가</h3>
       </header>
       <div class="intro">
         <div class="text">      
@@ -61,7 +61,7 @@
         <div class="msg">      
           <p><img src="./img/quot-1.png"></p>
           <p>코딩은 사고의 범위를 넓혀주고, 더 나은 생각을 할 수 있게 만들며, <br>분야에 상관없이 모든 문제에 대해 새로운 해결책을 생각할 수 있는 힘을 길러주는 것"<br> <span>- 빌 게이츠 - </span></p>
-          <p><img src="./img/quot-2.png"</p>
+          <p><img src="./img/quot-2.png"></p>
         </div>
       </div>
     </div>    
@@ -71,7 +71,7 @@
   <section>
     <div class="wrapper">
       <header class="section-title">
-        <h3>교육 프로그램</h3>
+        <h3 id="edu">교육 프로그램</h3>
       </header>  
       <div class="program-list">
         <div class="program">
@@ -114,17 +114,28 @@
     </div>    
   </section>
 
-<!--
+
   <script src="./js/jquery-2.2.4.min.js"></script>
   <script src="./js/jquery.bxslider.min.js"></script>
--->
-  <script>
 
+  <script>
+    $(function(){
+      var trigger = $('#trigger');
+      var menu = $('nav ul');
+      $(trigger).on('click',function(e){
+        e.preventDefault();
+        menu.slideToggle();
+      });
+    });
+    $('.bxslider').bxSlider({
+        auto: true,
+        autoHover: true
+    });
       
       
   </script>
         
-//    $(function() {
+<!-- //    $(function() {
 //			var trigger = $('#trigger');
 //			var menu = $('nav ul');
 //			$(trigger).on('click', function (e) {
@@ -136,7 +147,7 @@
 //        auto:true,
 //        autoHover: true,
 //      });
-//    });
+//    }); -->
 
 </body>
 </html>

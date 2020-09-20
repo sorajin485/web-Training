@@ -50,21 +50,20 @@ nav a#trigger {
   }
   nav ul {
     list-style: none;
-    display:block;
     width:750px;
     height:80px;
     padding: 0;
     margin:0 auto;        
-/*
     display:flex;
     justify-content: space-around;
-*/
+
   }
   nav ul li {
-/*
+
     flex:1;
     flex-basis:22%;
-*/
+
+    display: block;
     border-bottom:0;
     border-right: 1px solid #576979;        
     margin-right:-6px;
@@ -77,7 +76,7 @@ nav a#trigger {
     line-height:80px;
   }
   nav a#trigger {
-/*    display: none;*/
+   display: none;
   }          
 }
 
@@ -86,11 +85,11 @@ section {
   width:100vw;
   position:relative;
 }
-/*
+
 section:nth-child(odd) {
   background-color:#f3f3f4;
 }
-*/
+
 .section-title {
   margin:30px auto 50px auto;
 }
@@ -157,31 +156,48 @@ section:nth-child(odd) {
 }
 .img {
   text-align:center;
-/*  display:none;*/
+  display:none;
 }
 
 @media screen and (min-width:764px) {
   .intro {
     padding:20px 50px;
-/*
     display:flex;
-    align-items:stretch;
-*/
+    align-items:center
   }
   .text {
-    flex:   ;
+    flex: 2;
   }
   .img {
     display:block;
-    flex:   ;
+    flex: 1;
   }
   .img > img {
     max-width:250px;
   }
-}
+
 
 
 /* 교육 프로그램 영역 */
+  .program-list{
+    padding:20px 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .program-list h4{
+    font-size:1.3em;
+    margin-bottom:20px;
+  }
+  .program{
+    flex-basis: 22%;
+    padding:30px;
+    box-sizing:border-box;
+    margin-bottom:20px;
+    background-color:#fff;
+    border:1px solid #aaa;  
+  }
+
+}
 .program-list{
   padding:20px 50px;
 }
@@ -190,15 +206,13 @@ section:nth-child(odd) {
   margin-bottom:20px;
 }
 .program{
+  
   padding:30px;
   box-sizing:border-box;
   margin-bottom:20px;
   background-color:#fff;
   border:1px solid #aaa;  
 }
-
-
-
 /* 푸터 */
 .footer {
   padding-top:30px;
@@ -229,9 +243,9 @@ section:nth-child(odd) {
     align-items:center;
   }
   .contact {
-    flex:  ;
+    flex:  2;
   }
   .sns {
-    flex:  ;
+    flex:  1;
   }
 }
