@@ -12,7 +12,7 @@ app.get('/multi', (req, res) => {
     });
 });
 
-app.post('/multiupload', upload.array('file'), (req, res) => {
+app.post('/multiupload', upload.array('file',2), (req, res) => {
     console.log(req.body)
     console.log(req.files)
     res.status(204).end()

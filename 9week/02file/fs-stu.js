@@ -1,16 +1,16 @@
 // ./file/fs.js
+var fs= require("fs"); 
 
 
 
 
 
-
-// fs.appendFile('data1.txt', ' 안녕하세요', function(error){
-// 	console.log("비동기식 추가1");
-// });
-// fs.appendFile('data2.txt', ' 반갑습니다', function(error){
-// 	console.log("비동기식 추가2");
-// });
+fs.appendFile('data1.txt', ' 안녕하세요', function(error){
+	console.log("비동기식 추가1");
+});
+fs.appendFile('data2.txt', ' 반갑습니다', function(error){
+	console.log("비동기식 추가2");
+});
 
 // fs.readFile('data1.txt', function(error, data){
 // 	console.log("data1: ", data.toString());
